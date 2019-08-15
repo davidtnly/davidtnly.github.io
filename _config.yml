@@ -1,0 +1,53 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+# permalink:           pretty
+permalink:           /blog/:categories/:year/:month/:day/:title.html
+
+# Setup
+title:               Sajal Sharma
+tagline:             'Data Scientist and Software Engineer.'
+
+# description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:         'The internet home of Sajal Sharma. Data Scientist. Software Engineer. Amateur Philosopher.'
+url:                 http://www.sajalsharma.com
+baseurl:             ''
+blogurl:             '/blog'
+paginate:            5
+
+# Pagination
+paginate_path:       'blog/page:num/'
+
+# About/contact
+author:
+  name:              Sajal Sharma
+  url:               http://www.sajalsharma.com
+  email:             contact@sajalsharma.com
+
+# Custom vars
+version:             1.0.1
+
+#Gems
+gems:
+  - jekyll-paginate
+  - jekyll-assets
+  - jekyll-seo-tag
+
+# Compress.html
+compress_html:
+  comments: ["<!-- ", " -->"]
+
+
+# jekyll-assets
+assets:
+  compress:
+    js: true
+    css: true
+
+  assets:
+    - "*.png"
+    - "*.jpeg"
+    - "*.jpg"
+
+  sources:
+    - public/project-images/card-headers

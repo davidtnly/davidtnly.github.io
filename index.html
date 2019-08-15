@@ -1,231 +1,122 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129352368-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-		  gtag('config', 'UA-129352368-1');
-		</script>
+---
+layout: default-home
+title: Home
+---
+<div id="hello-world">
+	<div id="typed-strings" style="display:none">
+		<p>Hi, there! ^1000 <strong>I'm David.</strong> ^1200 <br> ^200<br> ^200 
+       	B.A. in Economics and a Minor in Psychology from <strong><a target="_blank" href="http://www.unimelb.edu.au/">University of California, Irvine</a></strong>. ^1200 <br> ^200<br> ^200
+       	Human <strong>that is interested in Machine Learning / Deep Learning / Computer Vision</strong> ^1200 <br> ^200<br> ^200 
+       	I'm passionate about using data to </p>
+	</div>
+	<span id="typed-intro"></span><i><span id="intro-end"></span></i>
+</div>
 
-		<title>David Ly's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<div id="home-menu" class="d-flex justify-content-around">
+	
+	<!-- Skills -->
+	<div class="hm-item">
+		<a id="skillsAn" href="#skillsModal">
+		<div>
+			<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+		</div>
+		<span>Skills<span>
+		</a>
+	</div>
 
-		<!-- Header -->
-			<div id="header">
+	<!-- Portfolio -->
+	<div class="hm-item">
+		<a id="portAn" target="_blank" href="/portfolio">
+		<div>
+			<i class="fa fa-folder-o fa-2x open-folder" aria-hidden="true"></i>
+		</div>
+		<span>Portfolio</span>
+		</a>
+	</div>
 
-				<div class="top">
+	<!-- Contact -->
+	<div class="hm-item">
+		<a id="contactAn" href="#contactModal">
+		<div>
+			<i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
+		</div>
+		<span>Contact</span>
+		</a>
+	</div>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">David Ly</h1>
-							<p>Data Analytics Engineer</p>
-						</div>
+</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
 
-				</div>
+<!-- Modal for Skills Section -->
+<div id="skillsModal">
+    <!-- THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="hm-modal close-skillsModal"> 
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    </div>   
+    
+    <div class="modal-content container content" style="display:none">
+    	<h2>Stuff I'm good at.</h2>
+    	<p>A bar chart to visualize my tech skills, and proficiency levels. Updated frequently. ;)<br>
+    	Check out the <a target="_blank" href="/about">About</a> page for an old-school overview, and <a target="_blank" href="/portfolio">Portfolio</a> to see these skills in action. </p>
+    	<div>
+    		<div id="skill-switch" class="d-flex justify-content-around" data-toggle="buttons">
+    		<label class="btn btn-primary active">
+    		<input type="radio" name="skillSelect" value="radioDS" checked>
+    			<i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span>Data Science</span>
+  			</label>
+  			<label class="btn btn-primary">
+    		<input type="radio" name="skillSelect" value="radioSE">
+    			<i class="fa fa-cogs fa-2x" aria-hidden="true"></i><span>Software Dev</span>
+  			</label>
+    		</div>
+    	</div>
+    	<div id="skillchart-container" style="height: 60vh">
+    	</div>
+    </div>
 
-				<div class="bottom">
+</div>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a target="_blank" href="https://www.linkedin.com/in/davidtly/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a target="_blank" href="https://github.com/davidtnly" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a target="_blank"  href="https://public.tableau.com/profile/david.ly#!/" class="icon fa-twitter"><span class="label">Tableau</span></a></li>
-							<li><a target="_blank" href="mailto:davidtnly@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
 
-				</div>
 
+
+<!-- Modal for Contact Form -->
+<div id="contactModal">
+    <div class="hm-modal close-contactModal"> 
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    </div>
+            
+    <div class="modal-content container content" style="display: none">
+    	<h2>Get in touch.</h2>
+    	<p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
+    	Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
+
+    	<p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
+
+    	<!-- Form content -->
+    	<form action="https://formspree.io/contact@sajalsharma.com" method="POST" data-parsley-validate>
+
+  			<div class="form-group">
+  				<label for="inputName">Name</label>
+    			<input class="form-control" type="text" id="inputName" required data-parsley-required-message="Always nice to put a name to an e-message.">
 			</div>
 
-		<!-- Main -->
-			<div id="main">
+  			<div class="form-group">
+    			<label for="inputEmail">Email address</label>
+    			<input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" required data-parsley-required-message="Communication is a two way street.">
+  			</div>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>David</strong>.</h2>
-								<p>Welcome! The website is currently under construction. Feel free to browse.</p>
-							</header>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">View Projects</a>
-							</footer>
-
-						</div>
-					</section>
-
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Click <strong><a target="_blank" href="https://www.linkedin.com/in/davidtly/">here</a></strong> to visit my LinkedIn or <strong><a target="_blank" href="https://docdro.id/E0BuGw0">here</a></strong> for my resume.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/tableaupublic.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://public.tableau.com/profile/david.ly#!/">Tableau Visualizations</a></strong></h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/airplane1.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://bit.ly/2zCuCjU">Simple Airplane Forecast Model (Code)</a></strong></h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/lclogo.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://github.com/davidtnly/LendingClub">Sample Lending Club Loan Default Prediction Model (Code)</a></strong></h3>											
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/ageofcrypto.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://tabsoft.co/2PCsJNZ">Age of Cryptocurrency</a></strong></h3> 
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/ghostbusters.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://bit.ly/2qOFzK6">Ghostbusters' DVD Forecast & Analysis</a></strong></h3> 
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/blizzard.jpg" alt="" /></a> <!-- or pic07 -->
-										<header>
-											<h3><strong><a target="_blank" href="https://bit.ly/2QOSwzf">Blizzard's World of Warcraft vs. Hearthstone (First Viz)</a></strong></h3> 
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/houseprice.jpg" alt="" /></a>
-										<header>
-											<h3><strong><a target="_blank" href="https://bit.ly/2RTrfvs">Beginner's House Price Analysis in R</a></strong></h3> 
-										</header>
-									</article>
-									<!-- New Row -->
-<!-- 									<article class="item">  
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> 
-										<header>
-											<h3><strong><a target="_blank" href="https://bit.ly/2QOSwzf">Blizzard's World of Warcraft vs. Hearthstone (First Viz)</a></strong></h3> 
-										</header>
-									</article> -->
-								</div>
-							</div>
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
-
-							<p>With an eagerness to always learn, I’ve been through roadblocks repeatedly. These have always been the opportunities to adapt and grow. 	  I enjoy this quote by Einstein, “I have no special talent. I am only passionately curious.” </p>
-
-							<p>I’ve always had an intellectual curiosity on core principles of psychology such as human cognition and behavior. You can examine the consequences and implications from someone’s actions by breaking it down to the very essence of a pattern or attribute. This led me to Data Science which is an interdisciplinary field created to analytically solve complex problems. By bringing an analytical combination of subjects in Economics, Psychology (behavioral, neuroscience), analytics, statistics, and machine learning, I can bend these subjects to frame new humanistic data-driven questions to drive business decisions.</p>
-
-							<p>At loanDepot, I engage in analytics daily to provide a greater visibility into the company's operations by building relationships across departments and understanding the business models, which often includes identifying problems relating to any operating procedures, defining and analyzing project requirements, data visualizations, query creations, and data mining to scratch the surface. It’s an exciting time right now for data analytics. I can be working with Tableau to create live dashboards to attempting to discover new insights using R and statistics to create value and impact.</p>
-
-							<p>During my free time I'm always trying to be active by doing activities like hiking, working out at the gym, or taking my shot at some Kaggle data sets. New opportunity? Send an invite!</p>
-
-							<header>
-								<h2>Current Status</h2>
-									<h3>Studying Machine Learning/Forecast Methods</h3>
-							</header>
-							<p>Regularized Regressions, Decision Trees, Random Forest, XGradient Boosting, Support Vector Machines, kNN, etc.</p>
-							<p>ARIMA, TSLM, TBATS, ETS, etc.</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Let's stay in touch</h2>
-							</header>
-
-							<p>Leave a thought here or send me a message on LinkedIn!</p>
-
-							<form method="post" action="https://formspree.io/davidtnly@gmail.com">
-								<!--<form action="https://formspree.io/davidtnly@gmail.com" method="POST" /> -->
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
+  			<div class="form-group">
+  				<label for="inputSubject">Subject</label>
+    			<input class="form-control" name="_subject" type="text" id="inputSubject" required data-parsley-required-message="What were we talking about, again?">
 			</div>
 
-		<!-- Footer -->
-			<div id="footer">
+  			<div class="form-group">
+    			<label for="inputMessage">Message</label>
+    			<textarea name="message" class="form-control" id="inputMessage" rows="3" required data-parsley-required-message="Use all and any words known!"></textarea>
+  			</div>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; David Ly. All rights reserved.</li>
-					</ul>
+  			<button type="submit" class="btn btn-primary">Submit</button>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+		</form>
+    </div>
+</div>
