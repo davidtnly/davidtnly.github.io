@@ -5,12 +5,12 @@
 permalink:           /blog/:categories/:year/:month/:day/:title.html
 
 # Setup
-title:               Sajal Sharma
-tagline:             'Data Scientist and Software Engineer.'
+title:               David Ly
+tagline:             'All Things Machine Learning / Deep Learning / Computer Vision'
 
 # description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-description:         'The internet home of Sajal Sharma. Data Scientist. Software Engineer. Amateur Philosopher.'
-url:                 http://www.sajalsharma.com
+description:         'Machine Learning / Deep Learning / Computer Vision'
+url:                 http://www.davidly.com
 baseurl:             ''
 blogurl:             '/blog'
 paginate:            5
@@ -20,9 +20,9 @@ paginate_path:       'blog/page:num/'
 
 # About/contact
 author:
-  name:              Sajal Sharma
-  url:               http://www.sajalsharma.com
-  email:             contact@sajalsharma.com
+  name:              David Ly
+  url:               http://www.davidly.com
+  email:             contact@davidly.com
 
 # Custom vars
 version:             1.0.1
