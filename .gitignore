@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 node_modules/
+=======
+# project
+_site
+.sass-cache
+.vagrant
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+>>>>>>> fa72b45686953f791e1cb50998d832a6a63dcc47
