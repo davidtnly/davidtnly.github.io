@@ -1,122 +1,72 @@
 ---
-layout: default-home
-title: Home
+layout: page
+title: My website
+subtitle: This is where I will tell my friends way too much about me
+use-site-title: true
 ---
-<div id="hello-world">
-	<div id="typed-strings" style="display:none">
-		<p>Hi, there! ^1000 <strong>I'm David.</strong> ^1200 <br> ^200<br> ^200 
-       	B.A. in Economics and a Minor in Psychology from <strong><a target="_blank" href="http://www.unimelb.edu.au/">University of California, Irvine</a></strong>. ^1200 <br> ^200<br> ^200
-       	Human <strong>that is interested in Machine Learning / Deep Learning / Computer Vision</strong> ^1200 <br> ^200<br> ^200 
-       	I'm passionate about using data to </p>
-	</div>
-	<span id="typed-intro"></span><i><span id="intro-end"></span></i>
-</div>
 
-<div id="home-menu" class="d-flex justify-content-around">
-	
-	<!-- Skills -->
-	<div class="hm-item">
-		<a id="skillsAn" href="#skillsModal">
-		<div>
-			<i class="fa fa-code fa-2x" aria-hidden="true"></i>
-		</div>
-		<span>Skills<span>
-		</a>
-	</div>
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | relative_url }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
 
-	<!-- Portfolio -->
-	<div class="hm-item">
-		<a id="portAn" target="_blank" href="/portfolio">
-		<div>
-			<i class="fa fa-folder-o fa-2x open-folder" aria-hidden="true"></i>
-		</div>
-		<span>Portfolio</span>
-		</a>
-	</div>
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
 
-	<!-- Contact -->
-	<div class="hm-item">
-		<a id="contactAn" href="#contactModal">
-		<div>
-			<i class="fa fa-comments-o fa-2x" aria-hidden="true"></i>
-		</div>
-		<span>Contact</span>
-		</a>
-	</div>
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 
-</div>
-
-
-<!-- Modal for Skills Section -->
-<div id="skillsModal">
-    <!-- THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-    <div class="hm-modal close-skillsModal"> 
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </div>   
-    
-    <div class="modal-content container content" style="display:none">
-    	<h2>Stuff I'm good at.</h2>
-    	<p>A bar chart to visualize my tech skills, and proficiency levels. Updated frequently. ;)<br>
-    	Check out the <a target="_blank" href="/about">About</a> page for an old-school overview, and <a target="_blank" href="/portfolio">Portfolio</a> to see these skills in action. </p>
-    	<div>
-    		<div id="skill-switch" class="d-flex justify-content-around" data-toggle="buttons">
-    		<label class="btn btn-primary active">
-    		<input type="radio" name="skillSelect" value="radioDS" checked>
-    			<i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i><span>Data Science</span>
-  			</label>
-  			<label class="btn btn-primary">
-    		<input type="radio" name="skillSelect" value="radioSE">
-    			<i class="fa fa-cogs fa-2x" aria-hidden="true"></i><span>Software Dev</span>
-  			</label>
-    		</div>
-    	</div>
-    	<div id="skillchart-container" style="height: 60vh">
-    	</div>
+    <div class="post-entry-container">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}">
+        </a>
+      </div>
+      {% endif %}
+      <div class="post-entry">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
+      </div>
     </div>
 
+    {% if post.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ post.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+   </article>
+  {% endfor %}
 </div>
 
-
-
-
-<!-- Modal for Contact Form -->
-<div id="contactModal">
-    <div class="hm-modal close-contactModal"> 
-        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
-    </div>
-            
-    <div class="modal-content container content" style="display: none">
-    	<h2>Get in touch.</h2>
-    	<p>Have work opportunities? Want to collaborate on a project? Need advice? Or maybe grab some <i class="fa fa-coffee" aria-hidden="true"></i>?<br>
-    	Just fill up the form and hit 'Submit'. I'll get back to you asap.</p>
-
-    	<p>You can also shoot an email to <a href="mailto:contact@sajalsharma.com">contact@sajalsharma.com</a>.</p>
-
-    	<!-- Form content -->
-    	<form action="https://formspree.io/contact@sajalsharma.com" method="POST" data-parsley-validate>
-
-  			<div class="form-group">
-  				<label for="inputName">Name</label>
-    			<input class="form-control" type="text" id="inputName" required data-parsley-required-message="Always nice to put a name to an e-message.">
-			</div>
-
-  			<div class="form-group">
-    			<label for="inputEmail">Email address</label>
-    			<input type="email" name="_replyto" class="form-control" id="inputEmail" aria-describedby="emailHelp" required data-parsley-required-message="Communication is a two way street.">
-  			</div>
-
-  			<div class="form-group">
-  				<label for="inputSubject">Subject</label>
-    			<input class="form-control" name="_subject" type="text" id="inputSubject" required data-parsley-required-message="What were we talking about, again?">
-			</div>
-
-  			<div class="form-group">
-    			<label for="inputMessage">Message</label>
-    			<textarea name="message" class="form-control" id="inputMessage" rows="3" required data-parsley-required-message="Use all and any words known!"></textarea>
-  			</div>
-
-  			<button type="submit" class="btn btn-primary">Submit</button>
-
-		</form>
-    </div>
-</div>
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
