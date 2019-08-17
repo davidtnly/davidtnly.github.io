@@ -1,3 +1,5 @@
-# Personal Site - Ryan Fitzgerald
+# David's Portfolio
 
-Repo containing my personal site built using React and GatsbyJS. Currently a work in progress.
+## License
+
+Completely free (MIT)! See [LICENSE.md](LICENSE.md) for more.
