@@ -82,7 +82,7 @@ header.sticky{position:fixed;z-index:999}
 #skills ul{display:block;margin:0 auto;padding:0;max-width:800px}
 #skills li{display:inline-block;margin:7px;padding:5px 10px;color:#374054;background:#e4e4ea;list-style:none;cursor:default;font-size:1.2em}
 #contact{padding:50px 15px;background:#3498db;text-align:center}
-#contact h1{color:#fff} /*i want to add this*/
+#contact h1 a{color:#fff}
 #contact h2{margin:0 0 15px 0;color:#fff;font-weight:500}
 #contact-form{max-width:500px;margin:0 auto}
 #contact-form input,
