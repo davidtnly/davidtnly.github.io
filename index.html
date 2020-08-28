@@ -1,70 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design for Bootstrap</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap 4 Portfolio/Resume Theme for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129352368-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-129352368-1');
+        </script>
+
+        <title>David Ly's Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left rounded-circle" src="img/headshot_resized.jpg" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">David Ly</h1>
+                <h2 class="desc">Random Guy On The Internet</h2>   
+                <ul class="social list-inline">
+                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/davidtly/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/davidtnly"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://www.instagram.com/codenameskyyy/"><i class="fab fa-instagram"></i></a></li>    
+                    <li class="list-inline-item"><a href="https://public.tableau.com/profile/david.ly#!/"><i class="fas fa-palette"></i></a></li>   
+                    <li class="list-inline-item last-item"><a href="https://www.twitch.tv/skyyyooo/"><i class="fab fa-twitch"></i></a></li>      
 
-  <!-- Start your project here-->  
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
-      <!-- <h1 class="text-hide animated fadeIn mb-4" style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">MDBootstrap</h1> -->
-      <h1 class><img src="img/1.jpg" /></h1>
-      <h5 class="animated fadeIn mb-3">Under Construction</h5>
-      <p class="animated fadeIn text-muted">David Ly</p>
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="https://www.linkedin.com/in/davidtly/" target="_blank"><i class="fas fa-paper-plane"></i> Let's Connect!</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My Story</h2>
+                        <div class="content">
+                            <p>I’ve always had an intellectual curiosity on core principles of psychology such as human cognition and behavior. You can examine the consequences and implications from someone’s actions by breaking it down to the very essence of a pattern or attribute. In 2015, this led me to Data Science which is an interdisciplinary field created to analytically solve complex problems. By bringing a combination of subjects in Economics, Psychology (behavioral, neuroscience), analytics, statistics, and machine learning, I hope to bend these subjects to frame new humanistic data-driven questions to drive business decisions.</p>   
+                        </div><!--//content-->
+                        <div class="content">
+                            <p>I engage in analytics daily to provide a greater visibility into the company's operations by building relationships across departments and understanding the business models, which often includes identifying problems relating to any operating procedures, defining and analyzing project requirements, data visualizations, query creations, and data mining to scratch the surface. It’s an exciting time right now for data analytics. I can be creating a new ETL process with Alteryx and connect it with Tableau to create live dashboards one day to attempting to discover new insights using programming and statistics to create value and impact the next day.</p>
+                        </div><!--//content-->
+                        <div class="content">
+                            <p>Some hobbies include trying to be active through hiking, working out at the gym, hitting the bags, maybe do some running, gaming, or practicing my craft in analytics. I might even stream every once in a blue moon on Twitch! (https://www.twitch.tv/skyyyooo)</p>
+                        </div><!--//content-->   
+                        <div class="content">
+                            <p>Feel free to connect with me, but leave me a message and let me know you came through my portfolio! </p>
+                        </div><!--//content-->                                                                                                                  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Side Quests</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://github.com/davidtnly/COVID19" target="_blank">
+                                    <!-- <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project-featured.jpg" alt="project name" /> -->
+                                    <img class="img-fluid project-image rounded shadow-sm" src="img/projects.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Now Public!</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://github.com/davidtnly/COVID19" target="_blank">COVID-19 Repository</a></h3>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>Thanks to Johns Hopkins University, I was able to build a Tableau COVID-19 dashboard. This was initially built in January 2020 with limited data and a lot of manual work. I decided to finally build a Python workflow that would be able to automate most of the cleaning steps required and then refresh through Tableau.</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://github.com/davidtnly" target="_blank"><i class="fas fa-thumbs-up"></i> View GitHub</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/davidtnly/DeepLearning/tree/master/09-dog-cat-classifier" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="img/dogcat.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/davidtnly/DeepLearning/tree/master/09-dog-cat-classifier" target="_blank">Dog & Cat Image Recognition Algorithm</a></h3>
+                                    <p class="mb-2">Build deep learning algorithms to classify cat and dog images using transfer learning techniques to beat previous state of the art models with reduced training times.</p>
+                                    <p><a class="more-link" href="https://github.com/davidtnly/DeepLearning/tree/master/09-dog-cat-classifier" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/davidtnly/DeepLearning/tree/master/07-pneumonia-radiograph-imaging" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="img/lungs.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/davidtnly/DeepLearning/tree/master/07-pneumonia-radiograph-imaging" target="_blank">Pneumonia Detection Deep Learning Algorithm</a></h3>
+                                    <p class="mb-2">Deep neural networks are now the state-of-the-art machine learning models. I have trained a 5-layer separable convolutional neural network model from scratch to classify and detect the presence of pneumonia from a collection of chest X-ray image samples. The final reults ended in a 93% training accuracy and 87% testing accuracy along with a 87% F1-score.</p>
+                                    <p><a class="more-link" href="https://github.com/davidtnly/DeepLearning/tree/master/07-pneumonia-radiograph-imaging" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/davidtnly/MachineLearning/blob/master/23-breast-cancer-detection-tf-nn.ipynb" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="img/cancer.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/davidtnly/MachineLearning/blob/master/23-breast-cancer-detection-tf-nn.ipynb" target="_blank">Breast Cancer Prediction</a></h3>
+                                    <p class="mb-2">Predict whether the cancer is benign or malignant using machine learning algorithms and determine which features have the best predictive ability in the models. This was a good introductory dataset to get familiar with using the sci-kit library from training to evaluation, utilizing PCA, and testing out a multilayer perceptron running 20,000 epochs.</p>
+                                    <p><a class="more-link" href="https://github.com/davidtnly/MachineLearning/blob/master/23-breast-cancer-detection-tf-nn.ipynb" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://public.tableau.com/profile/david.ly#!/vizhome/HealthStudyAnalytics/Dashboard" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="img/apple.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://public.tableau.com/profile/david.ly#!/vizhome/HealthStudyAnalytics/Dashboard" target="_blank">My Apple Health Journey!</a></h3>
+                                    <p class="mb-2">I have been gathering personal health activity data since 2017 and study topics data to visualize my journey in teaching myself Python, Machine Learning, Deep Learning, and Statistics. I used Python for data extraction, aggregation, time series, and visualized the data using Tableau. </p>
+                                    <p><a class="more-link" href="https://public.tableau.com/profile/david.ly#!/vizhome/HealthStudyAnalytics/Dashboard" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://github.com/davidtnly/" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="img/code.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://github.com/davidtnly/" target="_blank">Deep Learning / Machine Learning</a></h3>
+                                    <p class="mb-2"> Various projects from data cleaning, data exploration, data analysis, feature engineering, feature selection, machine learning (predictions) & evaluation, statistical analysis, and more. Some notebooks are also created to learn more about specific subjects like handling missing values, principal component analysis, TensorFlow model creation, etc.</p>
+                                    <p><a class="more-link" href="https://github.com/davidtnly/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Side Quests</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><span class="badge badge-theme">Current</span><a href="https://github.com/davidtnly" target="_blank"> Twitter - Sentiment Analysis</a> </h3>
+                                <p class="summary">Building a live Twitter sentiment classifier.</p>
+                                <!-- <p><a class="more-link" href="https://github.com/davidtnly" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p> -->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title"><span class="badge badge-theme">Upcoming</span><a href="https://github.com/davidtnly" target="_blank"> Business Classifier</a></h3>
+                                <p class="summary">Ranking certain businesses.</p>
+                                <!-- <p><a class="more-link" href="https://github.com/davidtnly" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p> -->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title"><span class="badge badge-theme">Upcoming</span><a href="https://github.com/davidtnly" target="_blank"> Forecasting Product Sales</a></h3>
+                                <p class="summary">Developing forecasting models using time series and machine learning. Compare to traditional methods like lead-driven, sales cycle, and test-market analysis forecasting. </p>
+                                <!--View more here: https://blog.close.com/sales-forecasting-strategies/ -->  
+                                <!-- <p><a class="more-link" href="https://github.com/davidtnly" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p> -->
+                            </div><!--//item-->
+                            
+                            <!-- <a class="btn btn-cta-secondary" href="#">Soon on GitHub <i class="fas fa-chevron-right pt-1"></i></a> -->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Journey</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Business Analyst - <span class="place"><a href="#">loanDepot, Wholesale</a></span> <span class="year">(Oct 2016 – Present)</span></h3>
+                                <p>I engage in analytics on a daily basis focused on building the underlying reporting infrastructure that supports both sales and business operations. I also lead certain business intelligence initiatives here relating to risk, productivity, operations, and data science using data-driven approaches to translate high-level goals into actionable plans and build the foundation for it to scale.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Customer Satisfaction Analyst - <span class="place"><a href="#">Kia Motors America</a></span> <span class="year">(Mar 2016 – Jul 2016)</span></h3>
+                                <p>Project management for developing Kia’s customer service team’s new internal platform and performed other various reporting tasks relating to customer satisfaction. I worked heavily in improving customer service scores and got to understand people’s needs in service by connecting data and people together.</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Analytics Consultant - <span class="place"><a href="#">Twelve Springs</a></span> <span class="year">(Mar 2016 – Jul 2016)</span></h3>
+                                <p>Continued to be responsible for all data subject matters including reporting, data gathering, and implementation before handing off responsibilities to the new CTO.</p>
+                            </div><!--//item-->  
+
+                            <div class="item">
+                                <h3 class="title">Business Analyst - <span class="place"><a href="#">Twelve Springs</a></span> <span class="year">(Jul 2015 – Mar 2016)</span></h3>
+                                <p>At this startup, I wore many hats during my time at Twelve Springs as I was integral in teams like marketing, finance, operations, and accounting. I could be working with marketing to design and implement new solutions to attract potential customers and drive analytics across our website to working with creating all of our SQL queries to create reporting dashboards to analyze our current state as a company. On top of those responsibilities, I led projects relating to customer segmentation, lead generation, and acquisition.</p>
+                            </div><!--//item-->
+                                                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section">
+
+<!--                     <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget. 
+                        
+                        <div id="github-graph" class="github-graph">
+
+                        </div>
+
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://github.com/caseyscarborough/github-activity" target="_blank">GitHub Activity Stream</a> widget.        
+                                            
+                        <div id="ghfeed" class="ghfeed">
+                        </div>
+                    </div>
+ -->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Irvine, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">davidtnly@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.linkedin.com/in/davidtly/">www.linkedin.com/in/davidtly/</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Armory</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Some of my daily technical tools I use. I'm always learning so there's always room for improvement.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">SQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Query optimization (indexing, profiling, plans), creating tables and stored procedures, joins, unions, subqueries, CTEs, temporary tables, etc."><i class="fas fa-info-circle"></i>Quite Good</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Tableau &amp; Data Viz<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Dashboard management, administrating, storytelling, distribution plots, aggregated views, and additional charts with a little research :) (Gantt, Waterfall, Pareto, etc.)"><i class="fas fa-info-circle"></i>Quite Good</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Practicing this the most through projects, automation, etc."><i class="fas fa-info-circle"></i>So-So</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>    
+                                                                          <!-- Example: Python, CSS3, SASS &amp; LESS -->
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Alteryx &amp; ETL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Building data workflows, data automation, fuzzy matching algs, etc."><i class="fas fa-info-circle"></i>So-So</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Deep/Machine Learning, TF &amp; Keras<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Improving through personal projects, self-studying, and consistency"><i class="fas fa-info-circle"></i>Learning</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+
+                                
+                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Apprenticeship</h2>
+                        <div class="content">
+<!--                             <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
+                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                            </div> --><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BA Economics</h3>
+                                <h4 class="university">University of California, Irvine <span class="year">(2015)</span></h4>
+                                <h4 class="university"><span class="year"><p>Studied applied econometrics, statistics, linear algebra, human cognition, behavioral/social/neuro psychology with a splash of Japanese/Roman/Greek/Western art history</p></span></h4>
+                                
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="testimonials aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Commendations</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>Working with David has been a pleasure. He has been able to excel in a startup environment without much structure and has thrived, mostly because he's such a quick learner and treats his tasks seriously. He has learned a ton in the half year we've worked together. I would definitely recommend him to any companies looking to build their data analytics team.</p>
+                                </blockquote>                
+                                <p class="source"><span class="name">Spencer Ying</span><br /><span class="title">Director of Technology</span></p>                                                             
+                            </div><!--//item-->
+                            
+                            <p><a class="more-link" href="https://www.linkedin.com/in/davidtly/"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+<!--                             
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li>
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+ -->
+                <!--//section-->
+                
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">TechCrunch Feed</h2>
+                        <!-- <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p> -->
+
+                        <div id="rss-feeds" class="content">
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Stream Music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/user/skyyyooo">Spotify</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=5qap5aO4i9A">lofi hip hop radio - beats to relax/study to</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=qsdzdUYl5c0">Summer Feelings ~ lofi hip hop mix</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://soundcloud.com/davidtnly">SoundCloud</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+<!--                 <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2020</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div>
+                </aside> -->
+                
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <!-- <h2 class="heading">Credits</h2> -->
+                        <div class="content">
+                            <h5 class="subheading pt-3">.__________________________________.</h5>
+<!--                             <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://jquery.com/" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                
+                                <li><a href="https://github.com/sdepold/jquery-rss" target="_blank"><i class="fas fa-external-link-alt"></i>jQuery RSS</a></li>
+                                
+                                <li>Profile image: <a href="https://www.flickr.com/photos/dotbenjamin/2577394151" target="_blank">Ben Smith</a></li>
+                            </ul>
+                            
+                            <hr/>
+                            
+                             <p class="pt-2">This Bootstrap 4 portfolio template is handcrafted by UX designer <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> as long as you keep the footer attribution link.</p>
+                             <p>If you’d like to <strong>use this template without the attribution link</strong>, you can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank">buy the commercial license</a>.</p>
+                             
+                             <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                            <hr/>
+                            <h5 class="subheading pt-3">Want more free Bootstrap themes and templates?</h5>
+                            <p>Check out our <a href="https://themes.3rdwavemedia.com/bootstrap-templates/free/">collection of free themes and templates.</a></p>
+                            <p>Follow <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying</a> on twitter so you don't miss any future freebies!</p> 
+                            
+                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i> Follow on twitter</a> -->
+                            
+                        </div>
+                    </div>
+                </aside>
+              
+            </div> 
+        </div>
     </div>
-
-    <!--Card-->
-    <div class="card m-5" style="width: 22rem;">
-
-      <!--Card image-->
-      <div class="view overlay">
-        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="MDB Quick Start">
-        <a href="#">
-          <div class="mask rgba-white-slight"></div>
-        </a>
-      </div>
-
-      <!--Card content-->
-      <div class="card-body">
-        <!--Title-->
-        <h4 class="card-title">Card title</h4>
-        <!--Text-->
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Button</a>
-      </div>
-
-    </div>
-    <!--/.Card-->
-      </div>
-  <!-- End your project here-->
-
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers - Copyright &copy; 2020 David Ly</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+</html> 
+
