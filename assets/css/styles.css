@@ -352,6 +352,14 @@ a.dotted-link:hover {
   line-height: 1.5;
 }
 
+.experience .item .subtitle {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
 .experience .item .title .place {
   color: #999;
   font-weight: normal;
